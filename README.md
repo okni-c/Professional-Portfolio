@@ -1,5 +1,7 @@
 # Proffessional-Portfolio
-
+## Overview
+- This is a website created from scratch to practice utilizing advanced CSS and responsive design.
+## Requirements
 - GIVEN I need to sample a potential employee's previous work
 - WHEN I load their portfolio
 - THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
@@ -13,3 +15,6 @@
 - THEN I am taken to that deployed application
 - WHEN I resize the page or view the site on various screens and devices
 - THEN I am presented with a responsive layout that adapts to my viewport
+## Application Preview
+
+[![website.jpg](https://i.postimg.cc/KzDThBg2/website.jpg)](https://postimg.cc/r0zsSdJn)
