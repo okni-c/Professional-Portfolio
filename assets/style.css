@@ -69,6 +69,10 @@ section {
     padding: 20px;
 }
 
+div a {
+    color: var(--darkgrey);
+}
+
 /*classes*/
 
 .hero {
@@ -116,7 +120,24 @@ section {
     align-items: stretch;
 }
 
-.container:hover {}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.item:hover {
+    animation: bounce 1s;
+}
 
 .container div {
     border: 20px solid var(--darkgrey);
@@ -156,7 +177,7 @@ h2 {
     width: 40%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 940px) {
     .container {
         display: flex;
         flex-direction: column;
