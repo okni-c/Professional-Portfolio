@@ -18,7 +18,7 @@ body {
     background-color: var(--white);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     color: var(--darkgrey);
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto !important;
 }
 
@@ -54,6 +54,14 @@ footer {
     text-align: left;
     color: var(--white);
     background-color: var(--darkgrey);
+}
+
+footer h3 {
+    color: var(--white);
+}
+
+footer p {
+    color: var(--white);
 }
 
 .item-contact a {
@@ -155,6 +163,8 @@ h2 {
     padding: 20px;
     flex: 1;
     color: var(--darkgrey);
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .item-main img {
@@ -163,7 +173,7 @@ h2 {
 }
 
 .item img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -171,10 +181,6 @@ h2 {
     display: flex;
     text-align: left;
     flex-direction: column;
-}
-
-.item-contact img {
-    width: 40%;
 }
 
 @media only screen and (max-width: 940px) {
