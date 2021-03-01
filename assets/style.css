@@ -1,3 +1,5 @@
+/* colors */
+
 :root {
     --darkgrey: #31303a;
     --white: #ffffff;
@@ -9,6 +11,8 @@
     padding: 0;
     margin: 0;
 }
+
+/* main elements */
 
 a {
     text-decoration: none;
@@ -47,6 +51,14 @@ ul {
     justify-content: space-between;
 }
 
+h2 {
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    color: var(--white);
+    background-color: var(--darkgrey);
+    text-align: center;
+}
+
 footer {
     padding: 30px;
     clear: both;
@@ -64,15 +76,6 @@ footer p {
     color: var(--white);
 }
 
-.item-contact a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.item-contact:hover a {
-    color: var(--grey);
-}
-
 section {
     padding: 20px;
 }
@@ -81,7 +84,7 @@ div a {
     color: var(--darkgrey);
 }
 
-/*classes*/
+/* classes */
 
 .hero {
     background-image: url(./images/hero.jpg);
@@ -128,35 +131,21 @@ div a {
     align-items: stretch;
 }
 
-@keyframes bounce {
-    0%, 20%, 60%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    80% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
+.container div {
+    border: 20px solid var(--darkgrey);
 }
 
 .item:hover {
     animation: bounce 1s;
 }
 
-.container div {
-    border: 20px solid var(--darkgrey);
+.item-contact a {
+    text-decoration: none;
+    color: var(--white);
 }
 
-h2 {
-    padding: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
-    color: var(--white);
-    background-color: var(--darkgrey);
-    text-align: center;
+.item-contact:hover a {
+    color: var(--grey);
 }
 
 .item {
@@ -183,12 +172,33 @@ h2 {
     flex-direction: column;
 }
 
+/* animation for hover */
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* media queues*/
+
 @media only screen and (max-width: 940px) {
+    /* resizing flexbox on smaller displays */
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    /* changes about me hero text box size */
     .hero-text {
         background-color: var(--darkgrey);
         padding: 20px;
