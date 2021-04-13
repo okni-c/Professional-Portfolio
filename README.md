@@ -1,4 +1,4 @@
-# Proffessional-Portfolio
+# Professional-Portfolio
 ## Overview
 - This is a website created from scratch to practice utilizing advanced CSS and responsive design.
 ## Requirements
